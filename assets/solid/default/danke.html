@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Prinbles</title>
+
+  <style type="text/css">
+   /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* Styles */
+  body {
+    color: #212121;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  }
+
+  .message {
+    font-size: 1.5em;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 8px;
+    background: #FFDC00;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .message:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(270deg, #FFDC00 0%, rgba(255, 220, 0, 0) 100%);
+  }
+
+  .message:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(90deg, #FFDC00 0%, rgba(255, 220, 0, 0) 100%);
+  }
+
+  .message__text {}
+
+  .blocks {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .block {
+    box-sizing: border-box;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .block__title {
+    font-size: 3.5em;
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .block__text {
+    font-size: 2em;
+    font-size: 2vw;
+    margin-top: 0.3em;
+  }
+
+  .block__number {
+    padding: 0 1em;
+    font-size: 10em;
+    font-size: 9vw;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .block__buttons {
+    margin-top: 1em;
+  }
+
+  .block__buttons .button {
+    margin-right: 1em;
+  }
+
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-size: 1.1vw;
+    padding: 0.6em 0.5em;
+    background: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px 1px;
+    border-radius: 3px;
+    background-color: #212121;
+    color: #ffffff;
+    transition-property: transform;
+    transition-duration: .3s;
+    margin-bottom: 0.5em;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .button--big {
+    font-size: 2em;
+    font-size: 1.7vw;
+    padding: 1em;
+    border-radius: 8px;
+  }
+
+  .ml-medium {
+    margin-left: 2em;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="blocks">
+    <div class="message">
+      <div class="message__text">Prinbles · Assets · Prinbles · Gamedev · Prinbles · Tutorials · Prinbles · Tools · Prinbles · Fun · Prinbles · Assets · Prinbles · Ideas · Prinbles · Design · Prinbles · Assets · Prinbles · Gamedev · Prinbles · Tutorials · Prinbles · Tools · Prinbles · Fun · Prinbles · Assets · Prinbles · Ideas · Prinbles · Design</div>
+    </div>
+  
+    <div class="block">
+      <div class="block__number">1</div>
+
+      <div>
+        <div class="block__title">Thank you!</div>
+        <p class="block__text">We do it for you.</p>
+        <p class="block__text">Good luck!</p>
+      </div>
+    </div>
+  
+    <div class="block">
+      <div class="block__number">2</div>
+
+      <div>
+        <div class="block__title">Be the first</div>
+        <div class="block__text">We just started, stay with us.</div>
+        <div class="block__text">More assets, tools, tutorials, gamedev stuff... SOON!</div>
+
+        <div class="block__buttons">
+          <a href="https://prinbles.itch.io" target="_blank" class="button">Itch.io</a>
+          <a href="https://patreon.com/Prinbles" target="_blank" class="button">Patreon</a>
+          <a href="https://github.com/prinbles" target="_blank" class="button">Github</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="block">
+      <div class="block__number">3</div>
+
+      <div>
+        <div class="block__title">Need support?</div>
+        <div class="block__text">We ask for a small donation.</div>
+        <div class="block__text">And welcome to our support chat.</div>
+      </div>
+
+      <a class="button button--big ml-medium" href="https://patreon.com/Prinbles" target="_blank">Donation + Support Chat</a>
+    </div>
+
+    <div class="message">
+      <div class="message__text">Thanks for subscribing and donating! It will help us keep making cool stuff ❤️</div>
+    </div>
+  </div>
+
+</body>
+</html>
